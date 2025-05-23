@@ -3,7 +3,6 @@
     "name": "native",
     "slug": "native",
     "version": "1.0.0",
-
     "scheme": "native",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,34 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pinkycodemaster1.xnative"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.pinkycodemaster1.xnative"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "50aa3a9b-9d91-4cbb-a86b-28d2c20dbf8e"
       }
     }
   }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "scripts": {
-    "start": "expo start --dev-client",
+    "start": "expo start --dev-client --clear",
     "ios": "expo run:ios",
     "android": "expo run:android",
     "build:dev": "eas build --profile development",
@@ -15,14 +15,17 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@better-auth/expo": "^1.2.8",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^7.0.3",
+    "better-auth": "^1.2.8",
     "expo": "~53.0.9",
-    "expo-constants": "~17.1.4",
+    "expo-constants": "~17.1.6",
     "expo-dev-client": "~5.1.7",
     "expo-dev-launcher": "^5.0.17",
-    "expo-linking": "~7.1.4",
+    "expo-linking": "~7.1.5",
     "expo-router": "~5.0.3",
+    "expo-secure-store": "^14.2.3",
     "expo-status-bar": "~2.2.3",
     "expo-system-ui": "~5.0.6",
     "expo-web-browser": "~14.1.6",
@@ -40,6 +43,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~19.0.10",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^9.25.1",
     "eslint-config-expo": "^9.2.0",
     "eslint-config-prettier": "^10.1.2",
